@@ -1,0 +1,6 @@
+<h1 style="text-align: center;">lista de produtos</h1>
+<div class="container d-flex flex-wrap justify-content-center">
+    <div class="row" *ngFor="let produto of produtos">
+        <app-card style="margin: 10px;" [produto] = produto></app-card>
+    </div>
+</div>

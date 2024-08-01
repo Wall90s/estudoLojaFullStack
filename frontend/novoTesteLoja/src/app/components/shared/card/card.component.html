@@ -1,0 +1,19 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-header" *ngIf="!produtoEditavel">
+    {{ produto.nome }}
+  </div>
+  <div class="card-header" *ngIf="produtoEditavel">
+    <input placeholder="nome" type="text" name="primeiro-campo" class="form-control" [(ngModel)]="produto.nome">
+  </div>
+  <ul class="list-group list-group-flush">
+    <div *ngFor="let item of produto.itens">
+      <li class="list-group-item">{{ item.nome }}</li>
+    </div>
+  </ul>
+  <div class="botoes-card">
+
+    <button class="btn btn-primary" *ngIf="produtoEditavel" (click)="onClickBotaoSalvar()">salvar</button>
+    <button class="btn btn-warning" (click)="onClickBotaoAtualizar()">{{ textoBotaoEditar }}</button>
+    <button class="btn btn-danger" (click)="onClickBotaoExcluir()">excluir</button>
+  </div>
+</div>

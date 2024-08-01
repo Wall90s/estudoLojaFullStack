@@ -1,0 +1,9 @@
+<h1 class="cadastrar-titulo">Adicionar novo produto</h1>
+<main class="cadastrar">
+
+    <form class="formulario">
+        <input type="text" name="primeiro-campo" class="form-control" placeholder="nome" [(ngModel)]="produto.nome">
+
+        <button class="btn btn-primary" (click)="adicionarProduto()" [routerLink]="['/']">adicionar</button>
+    </form>
+</main>

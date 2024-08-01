@@ -1,0 +1,14 @@
+.cadastrar-titulo{
+    text-align: center;
+}
+
+.cadastrar{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
